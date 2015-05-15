@@ -1,0 +1,16 @@
+{
+	"LANGNAMES": {
+		"da-dk": "Danish",
+		"en-gb": "English"
+	},
+	"PAGES": {
+		"HOME": {
+			"TITLE": "A conference for DEVELOPERS & DIGITAL MARKETERS",
+			"NAME": "Home",
+			"HREF": "index.html"
+		}
+	},
+	"FOOTER": {
+		"COPY":"Copyright 2015"
+	}
+}

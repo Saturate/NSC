@@ -1,0 +1,47 @@
+.social {
+	color: #000;
+	background: #f3f3f3;
+	font-size: 16px;
+	p {
+		text-align: center;
+	}
+	.row {
+		border-bottom: 1px solid #bfbfbf;
+		padding: 40px;
+		.row {
+			border: none;
+			padding: 0;
+		}
+	}
+	img {
+		width: 100%;
+	}
+	h1 {
+		font-family: 'Lucida Sans Unicode','Lucida Grande','sans-serif';
+		font-weight: normal;
+		font-size: 24px;
+	}
+}
+.social-header {
+	background: url(../images/social-icons-sprite.png) no-repeat;
+	text-indent: -999em;
+	height: 80px;
+	width: 82px;
+}
+.social-twitter-header {
+	background-position: 0 -80px;
+}
+.social-instagram-header {
+	background-position: 0 -160px;
+}
+.social-pintrest-header {
+	background-position: 0 -240px;
+}
+
+@media screen and (max-width: 768px) {
+	.social {
+		.social-header {
+			margin: 0 auto 20px;
+		}
+	}
+}

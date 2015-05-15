@@ -1,0 +1,23 @@
+<header class="header">
+	<div class="container">
+
+		<nav class="left mobile-menu visible-xs-block">
+			{% for LINK in PAGES %}
+				{% if loop.first %}<ul class="nav nav-pills pull-left">{% endif %}
+				<li {% if loop.first %}class="active"{% endif %}><a href="{{ LINK.HREF }}">{{ LINK.NAME }}</a></li>
+				{% if loop.last %}</ul>{% endif %}
+			{% endfor %}
+			<a href="#" class="show-mobile-menu-btn">
+				<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+			</a>
+		</nav>
+
+		<nav class="hidden-xs">
+			{% for LINK in PAGES %}
+				{% if loop.first %}<ul class="nav nav-pills pull-left">{% endif %}
+				<li {% if loop.first %}class="active"{% endif %}><a href="{{ LINK.HREF }}">{{ LINK.NAME }}</a></li>
+				{% if loop.last %}</ul>{% endif %}
+			{% endfor %}
+		</nav>
+	</div>
+</header>

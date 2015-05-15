@@ -1,0 +1,81 @@
+$icon-font-path: '../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/';
+
+// bower:scss
+@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+@import "_fonts.scss";
+
+.browsehappy {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+	line-height: 18px;
+	font-size: 14px;
+	font-family: 'Quantico', sans-serif;
+	font-style: normal;
+	background: #F4F4F4;
+	color: #1c2f3f;
+	left: 0;
+	position: relative;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.container {
+	max-width: 970px;
+}
+
+.btn {
+	color: #fff;
+	text-transform: uppercase;
+	border-radius: 0;
+	border: 2px solid #f84433;
+	&:hover {
+		background: #fff;
+	}
+}
+
+
+
+.top {
+	background: #F4F4F4 url(/images/background-lavarocks.jpg) no-repeat;
+	background-size: 100% auto;
+	font-size: 40px;
+	color: #1c2f3f;
+	&__logowrap {
+		background: #f84433;
+		overflow: hidden;
+	    float: left;
+	    padding: 10px 20px;
+	}
+	&__banner {
+		background: rgba(28, 47, 63, 0.9);
+		color: #fff;
+		padding: 40px;
+		text-align: right;
+		font-size: 18px;
+	}
+	&__intro {
+		margin: 550px 0 80px;
+		strong {
+			font-size: 70px;
+			color: #f84433;
+		}
+	}
+	&__time {
+		font-size: 18px;
+		font-weight: bold;
+		&__location {
+			font-weight: normal;
+		}
+	}
+}
+
+@import "_header.scss";
+@import "_footer.scss";
