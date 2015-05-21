@@ -103,7 +103,8 @@ body {
 	width: 33.333333%;
 	float: left;
 	color: #1a2e41;
-	padding: 30px;
+	padding: 125px 30px 30px;
+	min-height: 830px;
 	&__image {
 		border-radius: 275px;
 		max-width: 100%;
@@ -111,6 +112,7 @@ body {
 	&__name {
 		font-size: 30px;
 		font-weight: bold;
+		margin-top: 50px;
 	}
 	&__title-company {
 		font-size: 18px;
@@ -120,6 +122,8 @@ body {
 	&__topic {
 		text-align: left;
 		padding: 40px 28px;
+		max-width: 400px;
+		margin: 0 auto;
 		&:before {
 			content: "";
 			display: block;
@@ -132,11 +136,53 @@ body {
 		}
 	}
 }
+.organizers {
+	&__header {
+		&__txt {
+			padding: 50px 0;
+			&:after {
+				content: "";
+				display: inline-block;
+				height: 4px;
+				width: 72px;
+				background: #f84433;
+				position: relative;
+				top: -7px;
+				left: 20px;
+			}
+		}
+	}
+	&__list {
+		margin: 0 0 50px 0;
+		padding: 0;
+		display: block;
+		overflow: hidden;
+		&__company {
+			border: 1px solid #cdd3d9;
+			list-style: none;
+			display: block;
+			float: left;
+			width: 375px;
+			height: 220px;
+			margin-right: 30px;
+			margin-bottom: 30px;
+			a {
+				display: block;
+				text-align: center;
+				line-height: 220px;
+				img {
+					width: 160px;
+				}
+			}
+		}
+	}
+}
 
 .contact {
 	background: #F4F4F4 url(/images/background-rocks.jpg) no-repeat;
 	background-size: 100% auto;
 	color: #fff;
+	padding: 0 0 40px 0;
 	&__header {
 		&__txt {
 			color: #fff;
@@ -153,11 +199,27 @@ body {
 			}
 		}
 	}
-	a {
+	&__social,
+	&__email,
+	&__tel {
+		font-weight: bold;
+		font-size: 20px;
+		text-transform: uppercase;
 		color: #fff;
-		display: block;
+		display: inline-block;
+		margin-bottom: 20px;
+		width: 50%;
+		float: left;
+	}
+	&__email,
+	&__tel {
+		clear: left;
 	}
 }
+
+@import "_location.scss";
+
+
 
 @import "_header.scss";
 @import "_footer.scss";

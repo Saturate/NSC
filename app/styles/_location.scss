@@ -1,0 +1,55 @@
+.location {
+	color: #fff;
+	&__header {
+		background: rgb(205, 59, 46) url(/images/background-map.jpg) no-repeat center center;
+		clear: both;
+		&__txt {
+			color: #fff;
+			padding: 115px 0;
+			&:after {
+				content: "";
+				display: inline-block;
+				height: 4px;
+				width: 72px;
+				background: #fff;
+				position: relative;
+				top: -7px;
+				left: 20px;
+			}
+		}
+	}
+	&__image {
+		background: url(/images/mmc-image-1.jpg) no-repeat center top;
+		background-size: cover;
+		padding: 140px;
+		&__name {
+			font-size: 50px;
+			font-weight: bold;
+			padding-bottom: 20px;
+		}
+		&__description {
+			max-width: 450px;
+			padding: 0 0 80px;
+		}
+		&__address {
+			width: 475px;
+			border-top: 2px solid #fff;
+			padding: 10px 0;
+		}
+		&__links {
+			  padding: 0 0 0 10px;
+			&__link {
+				list-style: none;
+				&:before{
+					content: "-";
+					position: relative;
+					left: -5px;
+				}
+				a {
+					color: #fff;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
