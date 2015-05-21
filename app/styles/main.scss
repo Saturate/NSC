@@ -41,8 +41,6 @@ body {
 	}
 }
 
-
-
 .top {
 	background: #F4F4F4 url(/images/background-lavarocks.jpg) no-repeat;
 	background-size: 100% auto;
@@ -76,6 +74,88 @@ body {
 		&__location {
 			font-weight: normal;
 		}
+	}
+}
+
+.speakers {
+	color: #1a2e41;
+	&__header {
+		background: #fff;
+		&__txt {
+			padding: 100px 0;
+			&:after {
+				content: "";
+				display: inline-block;
+				height: 4px;
+				width: 72px;
+				background: #f84433;
+				position: relative;
+				top: -7px;
+				left: 20px;
+			}
+		}
+	}
+}
+
+.speaker {
+	list-style: none;
+	text-align: center;
+	width: 33.333333%;
+	float: left;
+	color: #1a2e41;
+	padding: 30px;
+	&__image {
+		border-radius: 275px;
+		max-width: 100%;
+	}
+	&__name {
+		font-size: 30px;
+		font-weight: bold;
+	}
+	&__title-company {
+		font-size: 18px;
+		font-weight: normal;
+		margin-bottom: 40PX;
+	}
+	&__topic {
+		text-align: left;
+		padding: 40px 28px;
+		&:before {
+			content: "";
+			display: block;
+			height: 4px;
+			width: 72px;
+			background: #f84433;
+			position: relative;
+			top: -40px;
+			left: -28px;
+		}
+	}
+}
+
+.contact {
+	background: #F4F4F4 url(/images/background-rocks.jpg) no-repeat;
+	background-size: 100% auto;
+	color: #fff;
+	&__header {
+		&__txt {
+			color: #fff;
+			padding: 50px 0;
+			&:after {
+				content: "";
+				display: inline-block;
+				height: 4px;
+				width: 72px;
+				background: #f84433;
+				position: relative;
+				top: -7px;
+				left: 20px;
+			}
+		}
+	}
+	a {
+		color: #fff;
+		display: block;
 	}
 }
 
