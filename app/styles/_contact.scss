@@ -1,0 +1,40 @@
+.contact {
+	background: #F4F4F4 url(/images/background-rocks.jpg) no-repeat;
+	background-size: cover;
+	color: #fff;
+	padding: 0 0 40px 0;
+	&__header {
+		&__txt {
+			color: #fff;
+			padding: 50px 0;
+			&:after {
+				content: "";
+				display: inline-block;
+				height: 4px;
+				width: 72px;
+				background: #f84433;
+				position: relative;
+				top: -7px;
+				left: 20px;
+			}
+		}
+	}
+	&__social,
+	&__email,
+	&__tel {
+		font-weight: bold;
+		font-size: 20px;
+		text-transform: uppercase;
+		color: #fff;
+		display: inline-block;
+		margin-bottom: 20px;
+		width: 50%;
+		float: left;
+		text-decoration: none;
+
+	}
+	&__email,
+	&__tel {
+		clear: left;
+	}
+}

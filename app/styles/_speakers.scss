@@ -1,0 +1,77 @@
+
+.speakers {
+	color: #1a2e41;
+	&__header {
+		background: #fff;
+		&__txt {
+			padding: 100px 0;
+			&:after {
+				content: "";
+				display: inline-block;
+				height: 4px;
+				width: 72px;
+				background: #f84433;
+				position: relative;
+				top: -7px;
+				left: 20px;
+			}
+		}
+	}
+	&__list {
+		padding: 100px 0;
+	}
+}
+
+.speaker {
+	list-style: none;
+	text-align: center;
+	width: 33.333333%;
+	float: left;
+	color: #1a2e41;
+	padding: 30px;
+	min-height: 710px;
+	@media (max-width: 990px) {
+		width: 50%;
+	}
+	@media (max-width: 680px) {
+		width: 100%;
+	}
+	&__image {
+		border-radius: 275px;
+		max-width: 100%;
+	}
+	&__name {
+		font-size: 30px;
+		font-weight: bold;
+		margin-top: 50px;
+	}
+	&__title-company {
+		font-size: 18px;
+		font-weight: normal;
+		margin-bottom: 40PX;
+	}
+	&:hover {
+		.speaker__topic {
+			&:before {
+				width: 92px;
+			}
+		}
+	}
+	&__topic {
+		text-align: left;
+		padding: 40px 28px;
+		max-width: 400px;
+		margin: 0 auto;
+		&:before {
+			transition: width 0.5s ease;
+			content: "";
+			display: block;
+			height: 4px;
+			width: 72px;
+			background: #f84433;
+			position: relative;
+			top: -40px;
+			left: -28px;
+		}
+	}
+}

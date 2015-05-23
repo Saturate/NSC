@@ -1,0 +1,70 @@
+
+.top {
+	background: #F4F4F4 url(/images/background-lavarocks.jpg) no-repeat;
+	background-size: 100% auto;
+	font-size: 40px;
+	color: #1c2f3f;
+	&__logowrap {
+		overflow: hidden;
+	    float: left;
+	    padding: 30px 30px;
+	    z-index: 3;
+	    &:before {
+	    	content: "";
+	    	background: #f84433;
+	    	position: absolute;
+	    	height: 400px;
+			width: 400px;
+			transform: rotate(-20deg);
+			top: -226px;
+			left: -180px;
+			z-index: 2;
+	    }
+	    &__logo {
+	    	z-index: 2;
+  			position: relative;
+	    }
+	}
+	&__banner {
+		//background: rgba(28, 47, 63, 0.9);
+		color: #fff;
+		padding: 40px;
+		padding: 48px;
+		text-align: right;
+		font-size: 18px;
+		* {
+			position: relative; // Okay so my mistake, this is a ugly fix for my z index issues. Gotta find a better way.
+			z-index: 2;
+		}
+		&:before {
+	    	content: "";
+	    	background: rgba(28, 47, 63, 0.9);
+	    	position: absolute;
+	    	display: block;
+	    	height: 400px;
+			width: 120%;
+		  	transform: rotate(2deg);
+			top: -283px;
+			z-index: 1;
+			left: 0;
+	    }
+	}
+	&__intro {
+		margin: 550px 0 80px;
+		@media (max-width: 900px) {
+			margin: 300px 0 80px;
+		}
+		strong {
+			font-size: 70px;
+			color: #f84433;
+		}
+	}
+	&__time {
+		font-size: 18px;
+		font-weight: bold;
+		padding-bottom: 50px;
+		&__location {
+			font-weight: normal;
+		}
+	}
+}
