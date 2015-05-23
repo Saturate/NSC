@@ -26,13 +26,18 @@ body {
 	transition: all 0.3s ease;
 }
 
+::selection {
+	background: #f84433;
+	color: #F4F4F4;
+	text-shadow: none;
+}
+
 .btn {
 	color: #fff;
 	text-transform: uppercase;
 	border-radius: 0;
 	border: 2px solid #f84433;
 	padding: 8px 40px;
-
 	&:hover {
 		background: #f84433;
 	}
