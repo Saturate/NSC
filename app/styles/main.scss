@@ -1,9 +1,8 @@
-$icon-font-path: '../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/';
-
 // bower:scss
-@import "../../bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
+@import "_normalize.scss";
 @import "_fonts.scss";
+@import "_framework.scss";
 
 .browsehappy {
 	margin: 0.2em 0;
@@ -32,8 +31,10 @@ body {
 	text-transform: uppercase;
 	border-radius: 0;
 	border: 2px solid #f84433;
+	padding: 8px 40px;
+
 	&:hover {
-		background: #fff;
+		background: #f84433;
 	}
 }
 
@@ -58,6 +59,9 @@ body {
 	}
 	&__intro {
 		margin: 550px 0 80px;
+		@media (max-width: 900px) {
+			margin: 300px 0 80px;
+		}
 		strong {
 			font-size: 70px;
 			color: #f84433;
@@ -70,6 +74,35 @@ body {
 		&__location {
 			font-weight: normal;
 		}
+	}
+}
+
+.about {
+	background: #1a2026 url(/images/background-rocks.jpg) no-repeat;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+	padding: 0 0 80px;
+	&__name {
+		color: #f84433;
+		font-size: 50px;
+		margin: 190px 0 20px 0;
+		font-weight: bold;
+	}
+	&__pre {
+		font-size: 22px;
+		max-width: 785px;
+		margin: 0 auto 100px;
+	}
+	&__body {
+		text-align: left;
+		width: 50%;
+		float: left;
+		padding: 20px;
+		height: 200px;
+	}
+	&__cta {
+		padding: 8px 40px;
 	}
 }
 
@@ -91,6 +124,9 @@ body {
 			}
 		}
 	}
+	&__list {
+		padding: 100px 0;
+	}
 }
 
 .speaker {
@@ -99,8 +135,14 @@ body {
 	width: 33.333333%;
 	float: left;
 	color: #1a2e41;
-	padding: 125px 30px 30px;
-	min-height: 830px;
+	padding: 30px;
+	min-height: 710px;
+	@media (max-width: 990px) {
+		width: 50%;
+	}
+	@media (max-width: 680px) {
+		width: 100%;
+	}
 	&__image {
 		border-radius: 275px;
 		max-width: 100%;
@@ -154,6 +196,7 @@ body {
 		display: block;
 		overflow: hidden;
 		&__company {
+			overflow: hidden;
 			border: 1px solid #cdd3d9;
 			list-style: none;
 			display: block;
@@ -169,6 +212,30 @@ body {
 				img {
 					width: 160px;
 				}
+				&:hover {
+					background: #F9F9F9;
+				}
+			}
+		}
+	}
+}
+
+.programme {
+	background: #e9edf1;
+	border: 40px solid #fff;
+	padding: 40px 0;
+	&__header {
+		&__txt {
+			padding: 50px 0;
+			&:after {
+				content: "";
+				display: inline-block;
+				height: 4px;
+				width: 72px;
+				background: #f84433;
+				position: relative;
+				top: -7px;
+				left: 20px;
 			}
 		}
 	}
@@ -176,7 +243,7 @@ body {
 
 .contact {
 	background: #F4F4F4 url(/images/background-rocks.jpg) no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
 	color: #fff;
 	padding: 0 0 40px 0;
 	&__header {
@@ -206,6 +273,8 @@ body {
 		margin-bottom: 20px;
 		width: 50%;
 		float: left;
+		text-decoration: none;
+
 	}
 	&__email,
 	&__tel {
