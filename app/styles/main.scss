@@ -194,12 +194,20 @@ body {
 		font-weight: normal;
 		margin-bottom: 40PX;
 	}
+	&:hover {
+		.speaker__topic {
+			&:before {
+				width: 92px;
+			}
+		}
+	}
 	&__topic {
 		text-align: left;
 		padding: 40px 28px;
 		max-width: 400px;
 		margin: 0 auto;
 		&:before {
+			transition: width 0.5s ease;
 			content: "";
 			display: block;
 			height: 4px;
