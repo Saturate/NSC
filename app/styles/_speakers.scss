@@ -1,6 +1,6 @@
-
 .speakers {
 	color: #1a2e41;
+	overflow: hidden;
 	&__header {
 		background: #fff;
 		&__txt {
@@ -37,6 +37,9 @@
 	}
 	@media (max-width: 680px) {
 		width: 100%;
+	}
+	@media (max-width: 500px) {
+		min-height: 0;
 	}
 	&__image {
 		border-radius: 275px;

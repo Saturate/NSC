@@ -4,6 +4,12 @@
 	background-size: 100% auto;
 	font-size: 40px;
 	color: #1c2f3f;
+	overflow: hidden;
+	position: relative;
+	@media (max-width: 900px) {
+		background-size: 130% auto;
+		background-position: center top;
+	}
 	&__logowrap {
 		overflow: hidden;
 	    float: left;
@@ -37,22 +43,28 @@
 			z-index: 2;
 		}
 		&:before {
-	    	content: "";
-	    	background: rgba(28, 47, 63, 0.9);
-	    	position: absolute;
-	    	display: block;
-	    	height: 400px;
-			width: 120%;
-		  	transform: rotate(2deg);
-			top: -283px;
+			content: "";
+			background: rgba(28, 47, 63, 0.9);
+			position: absolute;
+			display: block;
+			height: 461px;
+			width: 5000px;
+			transform: rotate(2deg);
+			top: -289px;
 			z-index: 1;
 			left: 0;
 	    }
+	    @media (max-width: 900px) {
+			time {
+				display: none;
+			}
+		}
 	}
 	&__intro {
 		margin: 550px 0 80px;
 		@media (max-width: 900px) {
 			margin: 300px 0 80px;
+			font-size: 48px;
 		}
 		strong {
 			font-size: 70px;
@@ -63,6 +75,17 @@
 		font-size: 18px;
 		font-weight: bold;
 		padding-bottom: 50px;
+		position: relative;
+		&:before {
+			content: "";
+			display: inline-block;
+			height: 4px;
+			width: 72px;
+			background: #f84433;
+			position: absolute;
+			top: -45px;
+			left: 0;
+		}
 		&__location {
 			font-weight: normal;
 		}
