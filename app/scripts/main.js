@@ -1,5 +1,7 @@
 /* jshint devel:true */
+/* global smoothScroll */
 (function(){
 	'use strict';
 
-})(jQuery);
+	smoothScroll.init();
+})();
