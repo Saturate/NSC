@@ -20,7 +20,10 @@
 		width: 50%;
 		float: left;
 		padding: 20px;
-		height: 200px;
+		@media (max-width: 850px) {
+			width: 100%;
+			float: none;
+		}
 	}
 	&__cta {
 		padding: 8px 40px;
