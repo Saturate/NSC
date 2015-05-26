@@ -10,3 +10,7 @@ Nordic Sitecore Conference - Static Site
 5. Type `gulp build` this will make a `dist` folder containing all the static files.
 
 If you are developing you can type `gulp serve` this will start a local preview server with auto reload making it easy to develop now features.
+
+## Problems with git
+Some firewalls might not like Git, type the following command in your Git Shell to fix this.
+`git config --global url."https://".insteadOf git://`
