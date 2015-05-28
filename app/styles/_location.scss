@@ -22,6 +22,9 @@
 		background: #551A12 url(/images/location-image-1.jpg) no-repeat center top;
 		background-size: cover;
 		padding: 140px;
+		@media (max-width: 500px) {
+			padding: 20px;
+		}
 		&__name {
 			font-size: 50px;
 			font-weight: bold;
@@ -33,6 +36,7 @@
 		}
 		&__address {
 			width: 475px;
+			max-width: 100%;
 			border-top: 2px solid #fff;
 			padding: 10px 0;
 		}
