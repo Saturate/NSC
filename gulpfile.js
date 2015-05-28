@@ -76,10 +76,21 @@ gulp.task('html', ['styles'], function () {
 
 gulp.task('images', function () {
   return gulp.src('app/images/**/*')
-    .pipe($.cache($.imagemin({
+    .pipe($.imagemin({
       progressive: true,
-      interlaced: true
-    })))
+      //interlaced: true,
+      svgoPlugins: [
+        { removeUnknownsAndDefaults: false },
+        { removeViewBox: false },
+        { convertShapeToPath: false },
+        { mergePaths: false },
+        { cleanupNumericValues: false },
+        { convertPathData: false },
+        { convertTransform: false },
+        { moveElemsAttrsToGroup: false },
+        { moveGroupAttrsToElems : false }
+      ]
+    }))
     .pipe(gulp.dest('dist/images'));
 });
 
