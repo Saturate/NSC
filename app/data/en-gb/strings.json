@@ -10,6 +10,43 @@
 			"HREF": "index.html"
 		}
 	},
+	"SPEAKERS": [{
+		"NAME": "Stephen Pope",
+		"TITLE": "Senior Developer",
+		"COMPANY": "Sitecore",
+		"IMG": "/images/speakers/stephen.png",
+		"TOPIC": "Sitecore is not an island. Let's build some bridges and start using cross channel data the smart way"
+	},{
+		"NAME": "Jens Mikkelsen",
+		"TITLE": "Sitecore specialist",
+		"COMPANY": "Inmento Solutions",
+		"IMG": "/images/speakers/jens-mikkelsen.png",
+		"TOPIC": "Jens will share valuable knowledge and tips based on his work in the real life Sitecore frontzone"
+	},{
+		"NAME": "Emil Okkels Klein",
+		"TITLE": "Backend Specialist",
+		"COMPANY": "Pentia",
+		"IMG": "/images/speakers/emil.png",
+		"TOPIC": "Emil is a straightforward, hands-on expert, who'll share some of his tips and secrets with you. Emil works on large solutions with both architecture and integration."
+	},{
+		"NAME": "Martina Welander",
+		"TITLE": "Technical Consulting Engineer",
+		"COMPANY": "Sitecore",
+		"IMG": "/images/speakers/welander.png",
+		"TOPIC": "SPEAK. The why, when and how"
+	},{
+		"NAME": "Lasse Rasch",
+		"TITLE": "Technical Architect",
+		"COMPANY": "Freelance",
+		"IMG": "/images/speakers/lasse-rasch.png",
+		"TOPIC": "Lasse is a respected Sitecore expert who will share his hands-on experience with the experience platform"
+	},{
+		"NAME": "Todd Mitchell",
+		"TITLE": "Technical Product Owner",
+		"COMPANY": "Sitecore",
+		"IMG": "/images/speakers/todd-mitchel.png",
+		"TOPIC": "How do you give everybody a piece of the experience? Insights and technical options you need to know about"
+	}],
 	"FOOTER": {
 		"COPY":"Copyright 2015"
 	}
