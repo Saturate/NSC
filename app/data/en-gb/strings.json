@@ -41,11 +41,23 @@
 		"IMG": "/images/speakers/lasse-rasch.png",
 		"TOPIC": "Lasse is a respected Sitecore expert who will share his hands-on experience with the experience platform"
 	},{
+		"NAME": "Bo Breiting",
+		"TITLE": "Architect",
+		"COMPANY": "Pentia",
+		"IMG": "/images/speakers/bo-breiting.png",
+		"TOPIC": ""
+	},{
 		"NAME": "Todd Mitchell",
 		"TITLE": "Technical Product Owner",
 		"COMPANY": "Sitecore",
 		"IMG": "/images/speakers/todd-mitchel.png",
 		"TOPIC": "How do you give everybody a piece of the experience? Insights and technical options you need to know about"
+	},{
+		"NAME": "Allan Kimmer Jensen",
+		"TITLE": "Frontend Specialist",
+		"COMPANY": "Pentia",
+		"IMG": "/images/speakers/allan-kimmer-jensen.png",
+		"TOPIC": ""
 	}],
 	"FOOTER": {
 		"COPY":"Copyright 2015"
