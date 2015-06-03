@@ -4,6 +4,14 @@
     <meta charset="utf-8">
     <meta name="description" content="The must-attend event for all Sitecore developers and marketing professionals who want to stay updated">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    
+    <!--
+        It's pretty likely that people will visit this site to signup, so let's tell browsers that.
+        The Prerender one is chrome only. Prefetch is HTML5 sped.
+    -->
+    <link rel="prefetch" href="http://www.sitecore.net/nsc2015">
+    <link rel="prerender" href="http://www.sitecore.net/nsc2015">
+
     <title>{% block title %}{% endblock %} | Nordic Sitecore Conference</title>
 
     {% block head %}
