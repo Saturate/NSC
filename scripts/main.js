@@ -1,1 +1,1 @@
-!function(){"use strict"}(jQuery);
+!function(){"use strict";smoothScroll.init()}();
