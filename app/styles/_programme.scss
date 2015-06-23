@@ -2,6 +2,9 @@
 	background: #e9edf1;
 	border: 40px solid #fff;
 	padding: 40px 20px;
+	&__msg {
+		padding: 0 0 50px;
+	}
 	&__header {
 		&__txt {
 			padding: 50px 0;
@@ -15,6 +18,54 @@
 				top: -7px;
 				left: 20px;
 			}
+		}
+	}
+	&__line {
+		display: block;
+		border-top: 2px solid #cad1d6;
+		padding: 23px 0 23px 150px;
+		&__time {
+			display: block;
+    		margin-left: -150px;
+			color: #f84433;
+			font-weight: bold;
+			font-size: 20px;
+			float: left;
+		}
+		&__header {
+			display: inline-block;
+			font-weight: bold;
+			font-size: 16px;
+			margin: 0;
+			text-transform: uppercase;
+		}
+		&--speaker {
+			.programme__line__header {
+				font-size: 22px;
+				text-transform: none;
+			}
+		}
+	}
+}
+.programme-track {
+	overflow: hidden;
+	&__name {
+	    border-top: 2px solid #cad1d6;
+	    padding: 25px 0;
+	    font-weight: bold;
+	    margin: 0;
+	    text-align: center;
+	    font-size: 30px;
+	}
+	&__track {
+		vertical-align: top;
+		float: left;
+		width: 50%;
+		&:first-child {
+			padding-right: 25px;
+		}
+		&:last-child {
+			padding-left: 25px;
 		}
 	}
 }
