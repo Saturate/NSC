@@ -1,0 +1,65 @@
+{
+	"LANGNAMES": {
+		"da-dk": "Danish",
+		"en-gb": "English"
+	},
+	"PAGES": {
+		"HOME": {
+			"TITLE": "A conference for DEVELOPERS",
+			"NAME": "Home",
+			"HREF": "index.html"
+		}
+	},
+	"SPEAKERS": [{
+		"NAME": "Stephen Pope",
+		"TITLE": "Senior Developer",
+		"COMPANY": "Sitecore",
+		"IMG": "/images/speakers/stephen.jpg",
+		"TOPIC": "Sitecore is not an island. Let's build some bridges and start using cross channel data the smart way"
+	},{
+		"NAME": "Jens Mikkelsen",
+		"TITLE": "Sitecore specialist",
+		"COMPANY": "Inmento Solutions",
+		"IMG": "/images/speakers/jens-mikkelsen.jpg",
+		"TOPIC": "Jens will share valuable knowledge and tips based on his work in the real life Sitecore frontzone"
+	},{
+		"NAME": "Emil Okkels Klein",
+		"TITLE": "Backend Specialist",
+		"COMPANY": "Pentia",
+		"IMG": "/images/speakers/emil.jpg",
+		"TOPIC": "Emil is a straightforward, hands-on expert, who'll share some of his tips and secrets with you. Emil works on large solutions with both architecture and integration."
+	},{
+		"NAME": "Martina Welander",
+		"TITLE": "Technical Consulting Engineer",
+		"COMPANY": "Sitecore",
+		"IMG": "/images/speakers/welander.jpg",
+		"TOPIC": "SPEAK. The why, when and how"
+	},{
+		"NAME": "Lasse Rasch",
+		"TITLE": "Technical Architect",
+		"COMPANY": "Freelance",
+		"IMG": "/images/speakers/lasse-rasch.jpg",
+		"TOPIC": "Lasse is a respected Sitecore expert who will share his hands-on experience with the experience platform"
+	},{
+		"NAME": "Bo Breiting",
+		"TITLE": "Architect",
+		"COMPANY": "Pentia",
+		"IMG": "/images/speakers/bo-breiting.jpg",
+		"TOPIC": ""
+	},{
+		"NAME": "Todd Mitchell",
+		"TITLE": "Technical Product Owner",
+		"COMPANY": "Sitecore",
+		"IMG": "/images/speakers/todd-mitchel.jpg",
+		"TOPIC": "How do you give everybody a piece of the experience? Insights and technical options you need to know about"
+	},{
+		"NAME": "Allan Kimmer Jensen",
+		"TITLE": "Frontend Specialist",
+		"COMPANY": "Pentia",
+		"IMG": "/images/speakers/allan-kimmer-jensen.jpg",
+		"TOPIC": ""
+	}],
+	"FOOTER": {
+		"COPY":"Copyright 2015"
+	}
+}

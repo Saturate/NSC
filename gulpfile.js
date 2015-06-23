@@ -36,25 +36,20 @@ gulp.task('jshint', function () {
 });
 
 gulp.task('template', function () {
-  var folders = getFolders('./app/data/');
-  var tasks = folders.map(function(folder) {
+  var data = JSON.parse(fs.readFileSync('./app/templates/data.json'));
+  data.languages = folders;
+  data.currentLanguage = folder;
+  data.generatedTime = moment().format('MMM Do YY, HH:mm:ss');
 
-    var data = JSON.parse(fs.readFileSync('./app/data/' + folder + '/strings.json'));
-    data.languages = folders;
-    data.currentLanguage = folder;
-    data.generatedTime = moment().format('MMM Do YY, HH:mm:ss');
+  console.log('Generating: ' + folder);
+  console.log('Data file loaded is:', data);
 
-    console.log('Generating: ' + folder);
-    console.log('Data file loaded is:', data);
+  return gulp.src('./app/templates/pages/*.html')
+    .pipe($.data(data))
+    .pipe($.swig({ defaults: { cache: false } }))
+    .pipe(gulp.dest('.tmp/' + folder))
+    .pipe($.if(defaultLang === folder, gulp.dest('.tmp'))); // Put default lang in root
 
-    return gulp.src('./app/templates/pages/*.html')
-      .pipe($.data(data))
-      .pipe($.swig({ defaults: { cache: false } }))
-      .pipe(gulp.dest('.tmp/' + folder))
-      .pipe($.if(defaultLang === folder, gulp.dest('.tmp'))); // Put default lang in root
-  });
-
-  return merge(tasks);
 });
 
 gulp.task('html', ['styles'], function () {
