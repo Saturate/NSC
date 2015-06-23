@@ -47,8 +47,7 @@ gulp.task('template', function () {
   return gulp.src('./app/templates/pages/*.html')
     .pipe($.data(data))
     .pipe($.swig({ defaults: { cache: false } }))
-    .pipe(gulp.dest('.tmp/' + folder))
-    .pipe($.if(defaultLang === folder, gulp.dest('.tmp'))); // Put default lang in root
+    .pipe(gulp.dest('.tmp'));
 
 });
 
