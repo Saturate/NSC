@@ -25,6 +25,8 @@ body {
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease;
 	transition: all 0.3s ease;
+
+	padding-bottom: 70px; // Sticky footer
 }
 
 ::selection,

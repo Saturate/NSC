@@ -16,16 +16,17 @@
 		margin: 0 auto 100px;
 	}
 	&__body {
-		text-align: left;
-		width: 50%;
-		float: left;
-		padding: 20px;
-		@media (max-width: 850px) {
+		max-width: 600px;
+	    margin: 0 auto;
+	    text-align: justify;
+		padding: 20px 20px 40px;
+		/*@media (max-width: 850px) {
 			width: 100%;
 			float: none;
-		}
+		}*/
 	}
 	&__cta {
 		padding: 8px 40px;
+		display: inline-block;
 	}
 }
