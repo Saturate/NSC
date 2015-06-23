@@ -42,6 +42,9 @@
 			position: relative; // Okay so my mistake, this is a ugly fix for my z index issues. Gotta find a better way.
 			z-index: 2;
 		}
+		&__time {
+			padding-right: 25px;
+		}
 		&:before {
 			content: "";
 			background: rgba(28, 47, 63, 0.9);
@@ -54,7 +57,7 @@
 			z-index: 1;
 			left: 0;
 	    }
-	    @media (max-width: 900px) {
+	    @media (max-width: 800px) {
 			time {
 				display: none;
 			}
