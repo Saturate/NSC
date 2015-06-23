@@ -52,12 +52,6 @@
 		"COMPANY": "Sitecore",
 		"IMG": "/images/speakers/todd-mitchel.jpg",
 		"TOPIC": "How do you give everybody a piece of the experience? Insights and technical options you need to know about"
-	},{
-		"NAME": "Allan Kimmer Jensen",
-		"TITLE": "Frontend Specialist",
-		"COMPANY": "Pentia",
-		"IMG": "/images/speakers/allan-kimmer-jensen.jpg",
-		"TOPIC": ""
 	}],
 	"FOOTER": {
 		"COPY":"Copyright 2015"

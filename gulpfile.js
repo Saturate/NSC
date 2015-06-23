@@ -37,12 +37,8 @@ gulp.task('jshint', function () {
 
 gulp.task('template', function () {
   var data = JSON.parse(fs.readFileSync('./app/templates/data.json'));
-  data.languages = folders;
-  data.currentLanguage = folder;
+  data.currentLanguage = 'en-gb';
   data.generatedTime = moment().format('MMM Do YY, HH:mm:ss');
-
-  console.log('Generating: ' + folder);
-  console.log('Data file loaded is:', data);
 
   return gulp.src('./app/templates/pages/*.html')
     .pipe($.data(data))
