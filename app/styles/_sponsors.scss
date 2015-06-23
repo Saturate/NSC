@@ -1,0 +1,51 @@
+.sponsors {
+	background: #fff;
+	&__header {
+		&__txt {
+			padding: 50px 0;
+			&:after {
+				content: "";
+				display: inline-block;
+				height: 4px;
+				width: 72px;
+				background: #f84433;
+				position: relative;
+				top: -7px;
+				left: 20px;
+			}
+		}
+	}
+	&__list {
+		width: 100%;
+		margin: 0 0 50px 0;
+		padding: 0;
+		display: block;
+		overflow: hidden;
+		&__company {
+			overflow: hidden;
+			border: 1px solid #cdd3d9;
+			list-style: none;
+			display: block;
+			float: left;
+			width: 50%;
+			height: 220px;
+			margin-right: 30px;
+			margin-bottom: 30px;
+			a {
+				display: block;
+				text-align: center;
+				line-height: 220px;
+				img {
+					width: 160px;
+				}
+				&:hover {
+					background: #F9F9F9;
+				}
+			}
+			@media (max-width: 800px) {
+				width: 100%;
+				margin-right: 0;
+			}
+		}
+	}
+}
