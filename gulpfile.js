@@ -39,7 +39,7 @@ gulp.task('template', function () {
   var folders = getFolders('./app/data/');
   var tasks = folders.map(function(folder) {
 
-    var data = require('./app/data/' + folder + '/strings.json');
+    var data = JSON.parse(fs.readFileSync('./app/data/' + folder + '/strings.json'));
     data.languages = folders;
     data.currentLanguage = folder;
     data.generatedTime = moment().format('MMM Do YY, HH:mm:ss');
