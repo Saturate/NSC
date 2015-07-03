@@ -52,6 +52,12 @@
 		"COMPANY": "Glass Mapper",
 		"IMG": "/images/speakers/mike_edwards.jpg",
 		"TOPIC": "A presentation on my experiences of running an open source project in the Sitecore community. The highs, the lows, the problems and the unexpected and what you might need to think about if you want to start and open source project"
+	},{
+		"NAME": "Robbert Hock",
+		"TITLE": "Sitecore MVP / Sitecore User Group NL",
+		"COMPANY": "Kayee",
+		"IMG": "/images/speakers/robbertHock.jpg",
+		"TOPIC": "Still many developers don't use Sitecore Rocks in their daily routine. In this session I will show how to get more out of Sitecore Rocks. I will show you how to speed up your development time with Sitecore, show you the various possibilities of Sitecore Rocks and give you valuable tips & tricks on using Sitecore Rocks in your daily routine and while developing SPEAK applications."
 	}],
 	"FOOTER": {
 		"COPY":"Copyright 2015"
