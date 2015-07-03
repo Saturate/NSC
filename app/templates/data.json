@@ -41,17 +41,17 @@
 		"IMG": "/images/speakers/lasse-rasch.jpg",
 		"TOPIC": "Lasse is a respected Sitecore expert who will share his hands-on experience with the experience platform"
 	},{
-		"NAME": "Bo Breiting",
-		"TITLE": "Architect",
-		"COMPANY": "Pentia",
-		"IMG": "/images/speakers/bo-breiting.jpg",
-		"TOPIC": ""
-	},{
 		"NAME": "Todd Mitchell",
 		"TITLE": "Technical Product Owner",
 		"COMPANY": "Sitecore",
 		"IMG": "/images/speakers/todd-mitchel.jpg",
 		"TOPIC": "How do you give everybody a piece of the experience? Insights and technical options you need to know about"
+	},{
+		"NAME": "Mike Edwards",
+		"TITLE": "Founder/Sitecore MVP",
+		"COMPANY": "Glass Mapper",
+		"IMG": "/images/speakers/mike_edwards.jpg",
+		"TOPIC": "A presentation on my experiences of running an open source project in the Sitecore community. The highs, the lows, the problems and the unexpected and what you might need to think about if you want to start and open source project"
 	}],
 	"FOOTER": {
 		"COPY":"Copyright 2015"
