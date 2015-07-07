@@ -38,6 +38,13 @@ body {
 }
 
 .btn {
+    &.top__banner__btn {
+        border-color: #fff;
+        background: #f84433;
+        &:hover {
+            background: darken(#f84433, 10%);
+        }
+    }
 	color: #fff;
 	text-transform: uppercase;
 	border-radius: 0;
