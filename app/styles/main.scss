@@ -39,11 +39,8 @@ body {
 
 .btn {
     &.top__banner__btn {
-        border-color: #fff;
-        background: #f84433;
-        &:hover {
-            background: darken(#f84433, 10%);
-        }
+        background: #949494;
+    	display: inline-block;
     }
 	color: #fff;
 	text-transform: uppercase;
@@ -52,9 +49,9 @@ body {
 	padding: 8px 40px;
 	text-decoration: none;
 	transition: all 0.1s ease;
-	&:hover {
+	/*&:hover {
 		background: #f84433;
-	}
+	}*/
 }
 
 /* Components */
